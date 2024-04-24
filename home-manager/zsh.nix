@@ -2,7 +2,6 @@
   programs.zsh = {
     enable = true;
     enableCompletion = true;
-    # enableAutosuggestions = true;
     autosuggestion.enable = true;
     syntaxHighlighting.enable = true;
 
@@ -16,22 +15,19 @@
 
       hms = "home-manager switch --flake ${flakeDir}";
 
-      conf = "nvim ${flakeDir}/nixos/configuration.nix";
-      pkgs = "nvim ${flakeDir}/nixos/packages.nix";
-
-      ll = "ls -l";
+      ll = "ls -lah";
       v = "nvim";
       se = "sudoedit";
-      ff = "fastfetch";
     };
 
     history.size = 10000;
     history.path = "${config.xdg.dataHome}/zsh/history";
-
-    oh-my-zsh = {
+    zplug = {
       enable = true;
-      plugins = [ "git" "sudo" ];
-      theme = "agnoster"; # blinks is also really nice
+      plugins = [
+        { name = "zsh-users/zsh-autosuggestions"; }
+        { name = "zsh-users/zsh-syntax-highlighting"; }
+      ];
     };
   };
 }

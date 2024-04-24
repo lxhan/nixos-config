@@ -1,5 +1,5 @@
 {
-  programs.alacritty = {
+  programs.kitty = {
     enable = true;
     settings = {
       window.opacity = 0.95;
@@ -8,8 +8,8 @@
         size = 13.0;
         # draw_bold_text_with_bright_colors = true;
         normal = {
-          family = "JetBrains Mono";
-          style = "Bold";
+          family = "Mononoki Nerd Font";
+          style = "Regular";
         };
       };
 

@@ -6,15 +6,11 @@
 
   environment.systemPackages = with pkgs; [
     # Desktop apps
-    chromium
+    brave
     telegram-desktop
-    alacritty
-    obs-studio
     rofi
     wofi
     mpv
-    kdenlive
-    discord
     gparted
     obsidian
     zoom-us
@@ -23,12 +19,12 @@
     # Coding stuff
     gnumake
     gcc
-    nodejs
+    nodejs_20
+    fnm
     python
     (python3.withPackages (ps: with ps; [ requests ]))
 
     # CLI utils
-    neofetch
     file
     tree
     wget
@@ -42,7 +38,7 @@
     light
     lux
     mediainfo
-    ranger
+    nnn
     zram-generator
     cava
     zip

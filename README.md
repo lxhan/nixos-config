@@ -7,6 +7,3 @@ cd $HOME/nix
 sudo nixos-rebuild switch --flake .
 home-manager switch --flake .
 ```
-Enjoy!
-
-![Screenshot](./screenshot.png)

@@ -3,9 +3,9 @@
     ./cursor.nix
     ./git.nix
     ./htop.nix
-    ./alacritty.nix
+    ./kitty.nix
     ./qt.nix
-
+    ./starship.nix
     ./wms/hyprland.nix
     ./wms/waybar.nix
   ];
