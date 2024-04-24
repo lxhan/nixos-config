@@ -25,6 +25,8 @@
     (python3.withPackages (ps: with ps; [ requests ]))
 
     # CLI utils
+    tmux
+    tmuxinator
     file
     tree
     wget
