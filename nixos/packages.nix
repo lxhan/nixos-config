@@ -7,6 +7,7 @@
   environment.systemPackages = with pkgs; [
     # Desktop apps
     brave
+    firefox-devedition
     telegram-desktop
     rofi
     wofi
@@ -15,18 +16,22 @@
     obsidian
     zoom-us
     pcmanfm-qt
+    pgadmin4
 
     # Coding stuff
     gnumake
     gcc
+    go
     nodejs_20
     fnm
     python
     (python3.withPackages (ps: with ps; [ requests ]))
+    docker
 
     # CLI utils
     tmux
     tmuxinator
+    zoxide
     file
     tree
     wget
